@@ -6,9 +6,6 @@ width: 100%;
 height: 15rem;
  color: ${(props) => props.theme['space-cadet']};
  font-family: 'roboto', sans-serif;
- border-bottom: 1px solid ${(props) => props.theme["green-700"]};
- border-radius: 8px;
-
  
 `
 export const NavContainer = styled.nav`
@@ -21,9 +18,12 @@ export const NavContainer = styled.nav`
 
   background-color: ${(props) => props.theme["green-700"]};
 
-  button{
+  a{
   height: 2rem;
-  width: calc(100%/8);
+  width: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   border: solid 1px transparent;
   color: white;
@@ -54,7 +54,7 @@ img{
 export const Test = styled.div`
 height: 99rem;
 width: 3rem;
-background-color: red;
+background-color: transparent;
 `
 
 

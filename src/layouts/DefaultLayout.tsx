@@ -1,4 +1,4 @@
-import { Outlet } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 import { HeaderContainer ,LogoContainer, NavContainer, Test } from "./styles";
 import logobueasy from "../assets/logobueasy.png"
 
@@ -12,10 +12,9 @@ export function DefaultLayout() {
     </LogoContainer>
     </HeaderContainer>
     <NavContainer>
-    <button>carrinho</button>
-    <button>configuracão</button>
-    <button>carrinho</button>
-    <button>carrinho</button>
+    <NavLink to="/">Produtos</NavLink>
+    <NavLink to="/cart">Carrinho</NavLink>
+    <NavLink to="/settings" >Configuracão</NavLink>
     </NavContainer>
     <Outlet />
     <Test />
